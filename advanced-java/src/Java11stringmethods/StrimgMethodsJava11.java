@@ -31,6 +31,8 @@ public class StrimgMethodsJava11 {
 	//4. repeat
 	String strr = "hello";
 	System.out.println(strr.repeat(5));
+	
+	
 	}
 
 }

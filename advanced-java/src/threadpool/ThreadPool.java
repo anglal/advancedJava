@@ -18,6 +18,7 @@ public class ThreadPool {
 		Runnable task4 = new Task("Task - 4");
 		Runnable task5 = new Task("Task - 5");
 		Runnable task6 = new Task("Task - 6");
+		Runnable task7 = new PrintCounting(3);
 		
 		pool.execute(task1);
 		pool.execute(task2);
@@ -25,6 +26,8 @@ public class ThreadPool {
 		pool.execute(task4);
 		pool.execute(task5);
 		pool.execute(task6);
+		pool.execute(task7);
+		
 		
 		pool.shutdown();
 	}
