@@ -1,0 +1,3 @@
+Create two tables - subject and, student.
+Subject - primary key int id, varchar name
+Student - primary key int id, student_name varchar, int score, int subject_id -> subject_id is foreign key
