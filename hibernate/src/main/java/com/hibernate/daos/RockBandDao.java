@@ -18,7 +18,7 @@ public class RockBandDao implements DaoInterface<RockBand> {
 		ArrayList<RockBand> bands = new ArrayList<>();
 		try {
 			Session session = HibernateUtil.openSession();
-			bands.addAll(session.createQuery("from"  + CLASS_NAME).list());
+			bands.addAll(session.createQuery("from "  + CLASS_NAME).list());
 			
 		}catch(HibernateException e) {
 			HibernateUtil.rollbackTransaction();
